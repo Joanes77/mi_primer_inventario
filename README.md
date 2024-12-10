@@ -31,7 +31,6 @@ y ahora vamos a subir el codigo a github
 ## Hola mundo en Node.js
 ahora vamos a hacer un hola mundo en node.js para eso vamos a poner el siguiente codigo en ineex.js
 ```
-```
 const express = require("express") => En esta parte definimos express para tomar la libreria express
 const app = express() => Decimos que app va usar algo de express
 const PORT = 3006 => definimos el puerto lo cual sera la ruta a tomar 
@@ -49,9 +48,9 @@ app.get("/",(req,res)=> tenemos un verbo http y una ruta y definimosuna funcion 
 app.listen(PORT,()=>{    =>inicia el servidor y lo pone en escucha con PORt tiene un callback que inicia el servidor cuando se inicie correctamente
     console.log(`server runnin in port ${PORT}`)   =>m cuando suceda el anterior evento confiem en consola mostrando que funciono
 })
+```
 
-
-
+```
 Documentacion extra: const express = require("express"); 
 // Importamos la librería Express para usar sus funcionalidades.
 
@@ -88,6 +87,7 @@ app.listen(PORT, () => {
 });
 
 
+```
 ```
 ruta Logica 
 // 1. Importar los módulos necesarios
