@@ -28,6 +28,16 @@ node_modules
 ```
 y ahora vamos a subir el codigo a github
 
+```
+git add .
+```
+```
+git commit -m"mensaje"
+```
+```
+git push
+```
+
 ## Hola mundo en Node.js
 ahora vamos a hacer un hola mundo en node.js para eso vamos a poner el siguiente codigo en ineex.js
 ```
@@ -109,6 +119,11 @@ app.listen(PORT, () => {
     console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
 
+```
+### Ruta y controladores
+primero creamos las carpetas con 
+```
+mkdir controller model routes
 ```
 
 
