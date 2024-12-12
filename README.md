@@ -126,4 +126,61 @@ primero creamos las carpetas con
 mkdir controller model routes
 ```
 
+## clase de hoy
+en la clase de hoy conectamos el archivo a mongo db
 
+primeramente abrimos el mongo db y creamos una cuenta y repositorio.
+
+
+ahora en la clase de hoy creamos un nuevo controlador el cual se llamo inventario.js
+
+
+primero ponemos 
+
+```
+const express = require("express")
+const router = express.Router()
+
+router.get("/",inventario_controller)
+
+module.exports = router
+```
+
+y en el apartado del index.js ponemos 
+
+```
+
+const inventario_routes = require("./routes/inventario.js")
+
+app.use("/api/inventario", inventario_routes)
+
+```
+
+sirve para definir el controllador en un solo nombre y llamarlo cuando se solicite, 
+
+
+
+y esa palabra definida esta aca en otro archivo que le asignamos controller 
+
+```
+
+exports.inventario_controller = (req,res)=>{
+    console.log("hola desde esta nueva carpeta de inventario")
+    res.send("Hola desde esta nueva carpeta de innventario")
+}
+```
+con esto lograremos tener una conexion con postman y cuanod lo conectemos saldra en postman mensaje y en consola un mensaje
+
+
+ahora queremos conectarnos a la base de datos, en este caso usaremos mongo db 
+
+creamos nuestra cuenta en mongo db abrimos un nuevo repositorio y nos enofncamos en la parte de tomar archivo con visual studio code
+
+copiamos ese codigo para pegarlo en el .env de nuestro trabajo.
+
+
+lo pegamos en .env
+
+```
+MONGO_URI = "mongodb+srv://joancardona:01021923m@cluster0.s9xrb.mongodb.net/"
+```
